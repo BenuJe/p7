@@ -1,0 +1,28 @@
+
+.Header{
+    margin-top: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 50px;
+    height: 80px;
+
+    .Kasa{
+        height: 80px;
+        width: 500px;
+    }
+
+    .Hlink{
+        height: 34px;
+        width: 300px;
+        font-size: 34px;
+    }
+
+    .Hlink a{
+
+        display: block;
+        text-decoration: none; 
+    }
+    .nav-active {
+        border-bottom: solid 1px 
+    }
+}

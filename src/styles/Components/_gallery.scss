@@ -1,0 +1,109 @@
+
+
+.Gallery {
+
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    padding-left: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+    .boiteGallery{
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 30%;
+        height: 300px;
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 1;
+        border-radius: 15px;
+        
+    }
+    
+    
+    
+    .boiteGallery a {
+    
+        display: block;
+        text-decoration: none;
+        color: black;
+    }
+    
+    
+    
+    .boiteGallery img{
+        
+        border-radius: 15px;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .imgtitle{
+        
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    
+    .backgroundGallery
+    {
+        
+        overflow: hidden;
+        height: 100%;
+    
+        z-index: 1;
+    }
+    
+    .textGallery p{
+        
+        color: black;
+        
+    }
+    
+    .textGallery{
+    
+        z-index: 2;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        opacity: 0.9;
+        border-radius: 0px 0px 15px 15px;
+        overflow:hidden;
+        font-size: 18px;
+        box-shadow: inset 0px -96px 50px -18px rgba(0,0,0,0.74);
+        height: 100%;
+        border-radius: 15px;
+    }
+    
+    .textGallery p {
+        top: 85%;
+        left: 15px;
+        color: white;
+        position: relative;
+        overflow:hidden;
+        white-space:nowrap;
+        width: 90%;
+        text-overflow: ellipsis;
+    }
+    
+    
+    
+
+
+}
+
+
+
+

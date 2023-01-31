@@ -1,0 +1,57 @@
+.Apropos{
+    display: flex;
+    flex-direction:column;
+    min-height: 600px;
+
+    .WrapDiv{
+        margin-bottom: 50px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bulle{
+        position: relative;
+        background-color: $colour-primaire;
+        border-radius: 10px;
+        
+    }
+    .bulle h2{
+        color: white;
+        padding-left: 15px;
+        margin: 0;
+        padding-top: 5px;
+    }
+    .content{
+        max-height: 0px;
+        overflow: hidden;
+        transition: all 0.3s cubic-bezier(0,1,0,1);
+
+    }
+    
+    .content.show {
+        max-height: 9999px;
+        transition: all 0.5s cubic-bezier(0,1,0,1);
+        background-color: #F6F6F6;
+        margin-top: -5px;
+        border-radius: 0px 0px 10px 10px;
+
+    }
+
+    .BulleDescriEquip{
+        padding-bottom: 5px;
+        
+    }
+    .BulleDescriEquip p{
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: justify;
+        
+    }
+    .icone{
+        color: white;
+        padding-top: 5px;
+        padding-bottom: 2px;
+        padding-right: 15px;
+        font-size: 30px;
+    }
+}

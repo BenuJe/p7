@@ -1,0 +1,35 @@
+.Section1{
+    position: relative;
+    height: 200px;
+}
+
+.SectionBackground {
+
+    position: absolute;
+    opacity: 1;
+    width: 90%;
+    margin-left: 5%;
+    height: 200px;
+    border-radius: 25px;
+    filter: brightness(55%);
+    background-size: cover;
+}
+
+.SectionTitre{
+    position: relative;
+}
+
+.SectionTitre h1 
+{   
+
+    
+    opacity: 1;
+    position: relative;
+    z-index: 10;
+    padding-top: 55px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 60px;
+    color: white;
+
+}
