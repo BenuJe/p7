@@ -2,13 +2,15 @@
 
 
 .premierBloc{
-    height: 100px;
     margin-bottom: 50px;
     .title h1{
 
         margin-top: 25px;
         margin-bottom: 0px;
-        font-size: 36px;
+        font-size: 30px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     .title p{
         margin: 0px;

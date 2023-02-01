@@ -1,0 +1,55 @@
+@media only screen and (max-width: 1200px){
+
+
+    .SectionTitre h1 {
+        font-size: 35px;
+        padding-top: 70px;
+    }
+
+
+    .Header{
+
+        .Hlink{
+            justify-content: space-around;
+            width: 250px;
+            height: 21px;
+        }
+
+        .Hlink a{
+            font-size: 20px;
+        }
+    }
+    
+    .Gallery {
+        .boiteGallery{
+            width: 45%;
+        }
+    }
+
+    .container{
+        flex-direction: column;
+        .premierBloc {
+            margin-bottom: 5px;
+            .title h1 {
+                font-size: 18px;
+            }
+            .title p {
+                font-size: 15px;
+            }
+        }
+    
+        .deuxiemeBloc {
+            flex-direction: row-reverse;
+            .host p {
+                font-size: 15px;
+            }
+            .rating{
+                margin-top: 25px;
+            }
+        }
+
+    }
+
+    
+
+}

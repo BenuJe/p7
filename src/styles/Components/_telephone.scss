@@ -1,0 +1,61 @@
+@media only screen and (max-width: 599px){
+
+    .erreur {
+        h2 {
+            font-size: 150px;
+        }
+        p{
+            font-size: 30px;
+        }
+    }
+
+    .slider {
+        .image{
+            height: 300px;
+        }
+        .fleche{
+            top:35%;
+            font-size: 80px;
+        }
+    }
+
+
+    .SectionTitre h1 {
+        font-size: 22px;
+        padding-top: 80px;
+    }
+
+    .DescriEquip{
+        .containerdefil h2{
+            padding-top: 5px;
+            font-size: 15px;
+        }
+        .icone{
+            font-size: 25px;
+        }
+    }
+
+    .Header{
+
+        .Hlink{
+            flex-direction: column;
+            justify-content: space-around;
+            width: 180px;
+            height: 21px;
+        }
+
+        .Hlink a{
+            text-align: center;
+            padding-top: 10px;
+            font-size: 20px;
+        }
+    }
+    
+    .Gallery {
+        .boiteGallery{
+            width: 90%;
+        }
+    }
+
+
+}
