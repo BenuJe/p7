@@ -1,5 +1,13 @@
 @media only screen and (max-width: 599px){
 
+
+    .Apropos{
+        .bulle h2 {
+            font-size: 15px;
+            padding-top: 10px;
+        }
+    }
+
     .erreur {
         h2 {
             font-size: 150px;
@@ -16,6 +24,9 @@
         .fleche{
             top:35%;
             font-size: 80px;
+        }
+        .compteur{
+            top: 75%;
         }
     }
 
@@ -37,11 +48,17 @@
 
     .Header{
 
+        .Kasa {
+            width: 101px;
+        }
+
+        .Kasa img {
+            width: 100px;
+        }
+
         .Hlink{
-            flex-direction: column;
-            justify-content: space-around;
-            width: 180px;
-            height: 21px;
+            width: 230px;
+            height: 35px;
         }
 
         .Hlink a{

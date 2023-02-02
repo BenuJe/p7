@@ -19,6 +19,11 @@ const ImageSlider = ({ donnee }) => {
 
 	return (
 		<div className="slider">
+			<div>
+				<p className="compteur">
+					{current + 1} / {length}
+				</p>
+			</div>
 			<IoIosArrowBack className="left-arrow fleche" onClick={prevSlide} />
 			<IoIosArrowForward className="right-arrow fleche" onClick={nextSlide} />
 			{donnee.pictures.map((image, index) => {

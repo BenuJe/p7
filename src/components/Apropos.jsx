@@ -113,7 +113,7 @@ const DetailLogement = () => {
 				</div>
 				<div className="WrapDiv" onClick={() => toggleSecurite(true)}>
 					<div className="bulle flexRow">
-						<h2>Sécurité</h2>
+						<h2>Responsabilité</h2>
 						<span>
 							{selectedSecurite === true ? (
 								<FaArrowCircleUp className="icone" />
