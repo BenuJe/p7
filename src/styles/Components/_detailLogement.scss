@@ -58,12 +58,14 @@ font-size: 12px;
     .topink
     {
         padding-top: 17px;
-        color: $colour-primaire;
+        fill: $colour-primaire;
+        height: 15px;
     }
     .togrey
     {
         padding-top: 17px;
-        color: grey
+        fill: grey;
+        height: 15px;
     }
 }
    
@@ -77,13 +79,13 @@ font-size: 12px;
         width: 48%;
         
     }
-    .containerdefil{
+    .bulle{
         position: relative;
         background-color: $colour-primaire;
         border-radius: 10px;
         
     }
-    .containerdefil h2{
+    .bulle h2{
         color: white;
         padding-top: 5px;
         padding-left: 15px;
@@ -95,9 +97,7 @@ font-size: 12px;
         transition: all 0.3s cubic-bezier(0,1,0,1);
 
     }
-    .test{
-        height: 400px;
-    }
+
     
     .content.show {
         max-height: 9999px;
@@ -123,6 +123,11 @@ font-size: 12px;
         padding-top: 3px;
         padding-right: 15px;
         font-size: 35px;
+    }
+
+    .spanTableau{
+        display: block;
+        padding-top: 10px;
     }
 
 }

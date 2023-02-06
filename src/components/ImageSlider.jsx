@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const ImageSlider = ({ donnee }) => {
 	const [current, setCurrent] = useState(0);
@@ -24,8 +23,21 @@ const ImageSlider = ({ donnee }) => {
 					{current + 1} / {length}
 				</p>
 			</div>
-			<IoIosArrowBack className="left-arrow fleche" onClick={prevSlide} />
-			<IoIosArrowForward className="right-arrow fleche" onClick={nextSlide} />
+
+			<img
+				src="../FlecheDroite.png"
+				alt="fleche directionnelle"
+				onClick={nextSlide}
+				className="right-arrow fleche"
+			></img>
+
+			<img
+				src="../FlecheGauche.png"
+				alt="fleche directionnelle"
+				onClick={prevSlide}
+				className="left-arrow fleche"
+			></img>
+
 			{donnee.pictures.map((image, index) => {
 				return (
 					<div

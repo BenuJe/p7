@@ -1,28 +1,6 @@
-import React, { useState } from "react";
-import { AiFillStar } from "react-icons/ai";
-import { FaArrowCircleDown, FaArrowCircleUp } from "react-icons/fa";
+import Collapse from "./Collapse";
 
 const DetailLogement = ({ donnee }) => {
-	const [selected, setSelectedEquip] = useState(false);
-
-	const toggleEquip = () => {
-		if (selected === true) {
-			return setSelectedEquip(false);
-		}
-
-		setSelectedEquip(true);
-	};
-
-	const [selectedDes, setSelectedDes] = useState(false);
-
-	const toggleDes = () => {
-		if (selectedDes === true) {
-			return setSelectedDes(false);
-		}
-
-		setSelectedDes(true);
-	};
-
 	return (
 		<div className="body">
 			<div className="container flexRow">
@@ -48,51 +26,54 @@ const DetailLogement = ({ donnee }) => {
 					</div>
 
 					<div className="rating">
-						<AiFillStar className={1 > donnee.rating ? "togrey" : "topink"} />
-						<AiFillStar className={2 > donnee.rating ? "togrey" : "topink"} />
-						<AiFillStar className={3 > donnee.rating ? "togrey" : "topink"} />
-						<AiFillStar className={4 > donnee.rating ? "togrey" : "topink"} />
-						<AiFillStar className={5 > donnee.rating ? "togrey" : "topink"} />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 576 512"
+							className={1 > donnee.rating ? "togrey" : "topink"}
+						>
+							<path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+						</svg>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 576 512"
+							className={2 > donnee.rating ? "togrey" : "topink"}
+						>
+							<path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+						</svg>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 576 512"
+							className={3 > donnee.rating ? "togrey" : "topink"}
+						>
+							<path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+						</svg>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 576 512"
+							className={4 > donnee.rating ? "togrey" : "topink"}
+						>
+							<path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+						</svg>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 576 512"
+							className={5 > donnee.rating ? "togrey" : "topink"}
+						>
+							<path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+						</svg>
 					</div>
 				</div>
 			</div>
 			<div className="DescriEquip flexRow">
-				<div className="WrapDiv Descri" onClick={() => toggleDes(true)}>
-					<div className="containerdefil flexRow">
-						<h2>Description</h2>
-						<span>
-							{selectedDes === true ? (
-								<FaArrowCircleUp className="icone" />
-							) : (
-								<FaArrowCircleDown className="icone" />
-							)}
+				<Collapse titre="Description" text={donnee.description} />
+				<Collapse
+					titre="Equipements"
+					text={donnee.equipments.map((equipement, index) => (
+						<span className="spanTableau" key={index}>
+							{equipement}
 						</span>
-					</div>
-					<div className={selectedDes === true ? "content show" : "content"}>
-						<div className="BulleDescriEquip">
-							<p>{donnee.description}</p>
-						</div>
-					</div>
-				</div>
-				<div className="WrapDiv Equi" onClick={() => toggleEquip(true)}>
-					<div className="containerdefil flexRow">
-						<h2>Equipements</h2>
-						<span>
-							{selected === true ? (
-								<FaArrowCircleUp className="icone" />
-							) : (
-								<FaArrowCircleDown className="icone" />
-							)}
-						</span>
-					</div>
-					<div className={selected === true ? "content show" : "content"}>
-						<div className="BulleDescriEquip">
-							{donnee.equipments.map((equipement, index) => (
-								<p key={index}> {equipement}</p>
-							))}
-						</div>
-					</div>
-				</div>
+					))}
+				/>
 			</div>
 		</div>
 	);

@@ -1,13 +1,15 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
 
 const Gallery = () => {
 	const [data, setData] = useState([]);
+
 	useEffect(() => {
-		axios
-			.get("./logements.json")
-			.then((res) => setData(res.data))
+		fetch("../logements.json")
+			.then((response) => response.json())
+			.then((res) => {
+				setData(res);
+			})
 			.catch((err) => console.log(err));
 	}, []);
 	return (
